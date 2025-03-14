@@ -37,31 +37,34 @@ INSTRUCTIONS FOR WINDOWS ONLY
 
 ## Install FFMPEG
 Download FFMPEG
+
 	https://ffmpeg.org/
 	After downloading, extract it somewhere and place this location in system path variables.
 	(Location you saved it)\ffmpeg-master-latest-win64-gpl-shared\bin
 
 ## Enable CUDA
 To enable CUDA you need to install cuda toolkit 12.4. (Latest supported version for pytorch)
+
 	https://developer.nvidia.com/cuda-12-4-0-download-archive
 
 Add these CUDA 12.4 locations to system path variables.
+
 	C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\bin
 	C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\libnvvp
 
 If desired install the CUDA version of pytorch. (Much faster processing if you have an Nvidia GPU)
-	While in your virtual environment
+
+	# While in your virtual environment
 	pip uninstall torch
 	pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 
 Test CUDA functionality
-	With the virtual environment enabled, you can test if CUDA works with these commands.
+
+	# With the virtual environment enabled, you can test if CUDA works with these commands.
 	import torch
 	print("CUDA Available:", torch.cuda.is_available())
 	print("CUDA Version:", torch.version.cuda)
 	print("PyTorch Version:", torch.__version__)
-
-If you have any issues, I've only tested this on python 3.9.
 
 
 ## Usage
@@ -73,3 +76,5 @@ Once everything is installed run either of these scripts from the virtual enviro
 
 tts_demo.py is great for testing different voices with shorter text.
 AIAudioBook.py is only for dubbing audio books.
+
+If you have any issues, I've only tested this on python 3.9.
