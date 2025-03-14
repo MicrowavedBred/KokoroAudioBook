@@ -1,3 +1,7 @@
+# Thanks to PierrunoYT for making the original version that I took 99% of this from.
+# I only added the audio book side
+# Original repository found here https://github.com/PierrunoYT/Kokoro-TTS-Local
+
 # Kokoro TTS Local
 
 A local implementation of the Kokoro Text-to-Speech model, featuring dynamic module loading, automatic dependency management, and a web interface.
