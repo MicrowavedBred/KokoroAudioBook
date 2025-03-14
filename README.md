@@ -70,6 +70,7 @@ Test CUDA functionality
 ## Usage
 Once everything is installed run either of these scripts from the virtual environment:
 
+	# Model and voice will install automatically when either script is ran
 	python tts_demo.py
 	or
 	python AIAudioBook.py
